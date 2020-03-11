@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LoadMaster-api-call-sample/1.0.0": {
+        "runtime": {
+          "LoadMaster-api-call-sample.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LoadMaster-api-call-sample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

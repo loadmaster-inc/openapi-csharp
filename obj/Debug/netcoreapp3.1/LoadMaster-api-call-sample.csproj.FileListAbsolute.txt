@@ -1,0 +1,11 @@
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.exe
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.deps.json
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.runtimeconfig.json
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.runtimeconfig.dev.json
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.dll
+D:\dev\LoadMaster-api-call-sample\bin\Debug\netcoreapp3.1\LoadMaster-api-call-sample.pdb
+D:\dev\LoadMaster-api-call-sample\obj\Debug\netcoreapp3.1\LoadMaster-api-call-sample.csprojAssemblyReference.cache
+D:\dev\LoadMaster-api-call-sample\obj\Debug\netcoreapp3.1\LoadMaster-api-call-sample.AssemblyInfoInputs.cache
+D:\dev\LoadMaster-api-call-sample\obj\Debug\netcoreapp3.1\LoadMaster-api-call-sample.AssemblyInfo.cs
+D:\dev\LoadMaster-api-call-sample\obj\Debug\netcoreapp3.1\LoadMaster-api-call-sample.dll
+D:\dev\LoadMaster-api-call-sample\obj\Debug\netcoreapp3.1\LoadMaster-api-call-sample.pdb
