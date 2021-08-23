@@ -10,10 +10,9 @@ namespace LoadMaster_api_call_sample
 {
     class Program
     {
-        private const string OptimizeUrlBase = "https://optimize.zhuangxiang.com/";
         private const string TokenUrlBase = "https://api.zhuangxiang.com/";
-        private const string IntegrateUrlBase = "https://integrate.zhuangxiang.com/";
-        private const string GraphicsServiceUrlBase = "https://graphics.zhuangxiang.com/";
+        private const string OpenApiUrlBase = "https://openapi.zhuangxiang.com/";
+
         static void Main(string[] args)
         {
             RunDemoAsync().Wait();
@@ -30,11 +29,11 @@ namespace LoadMaster_api_call_sample
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri(IntegrateUrlBase);
+                client.BaseAddress = new Uri(OpenApiUrlBase);
 
                 client.SetBearerToken(accessToken);
 
-                var response = await client.GetAsync($"api/LoadingTasks/GetByName?name={taskName}");
+                var response = await client.GetAsync($"/loadingtask/GetLoadingTaskByName?name={taskName}");
                 if (!response.IsSuccessStatusCode)
                 {
                     Console.WriteLine(response.StatusCode);

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UA2DRMEnegKsztzmP4mSELDH90e99OEyfcHwW7f7zwpqFrIs0IBlRBe9LyoQKz0pziazQWFLiROLvI10lnPJhg==",
+  "success": true,
+  "projectFilePath": "D:\\dev\\openapi-csharp\\LoadMaster-api-call-sample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\david\\.nuget\\packages\\identitymodel\\4.1.1\\identitymodel.4.1.1.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\system.text.encodings.web\\4.6.0\\system.text.encodings.web.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

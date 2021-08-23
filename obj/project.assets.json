@@ -123,11 +123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\LoadMaster-api-call-sample\\LoadMaster-api-call-sample.csproj",
+      "projectUniqueName": "D:\\dev\\openapi-csharp\\LoadMaster-api-call-sample.csproj",
       "projectName": "LoadMaster-api-call-sample",
-      "projectPath": "D:\\dev\\LoadMaster-api-call-sample\\LoadMaster-api-call-sample.csproj",
+      "projectPath": "D:\\dev\\openapi-csharp\\LoadMaster-api-call-sample.csproj",
       "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\LoadMaster-api-call-sample\\obj\\",
+      "outputPath": "D:\\dev\\openapi-csharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -141,11 +141,11 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 2.5.0\\packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -157,6 +157,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "IdentityModel": {
             "target": "Package",
@@ -182,7 +183,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
