@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Abp.Web.Models;
 
 namespace LoadMaster_api_call_sample
 {
@@ -22,7 +23,7 @@ namespace LoadMaster_api_call_sample
         {
             var accessToken = await GetAccessTokenViaOwnerPasswordAsync();
 
-            await GetLoadingTaskDataByName(accessToken, "{ your_loadingTask_name}");
+            await GetLoadingTaskDataByName(accessToken,"{ your_loadingTask_name}");
         }
 
         private static async Task<LoadingTaskDto> GetLoadingTaskDataByName(string accessToken, string taskName)
@@ -41,7 +42,9 @@ namespace LoadMaster_api_call_sample
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
-                var taskData = JsonConvert.DeserializeObject<LoadingTaskDto>(content);
+                var ajaxResponse  = JsonConvert.DeserializeObject<AjaxResponse<LoadingTaskDto>>(content);
+
+                var taskData = ajaxResponse.Result;
 
                 Console.WriteLine("GetData succed!");
                 Console.WriteLine($"Task name is {taskData.Name}");
@@ -59,7 +62,7 @@ namespace LoadMaster_api_call_sample
         {
             using (var httpHandler = new HttpClientHandler())
             {
-                httpHandler.CookieContainer.Add(new Uri(TokenUrlBase), new System.Net.Cookie("Abp.TenantId", "{your tenantId}"));  //Set TenantId  
+                httpHandler.CookieContainer.Add(new Uri(TokenUrlBase), new System.Net.Cookie("Abp.TenantId", "{your tenant id}"));  //Set TenantId  
 
                 using (var client = new HttpClient(httpHandler))
                 {
