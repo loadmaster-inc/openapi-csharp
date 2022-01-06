@@ -11,8 +11,8 @@ namespace LoadMaster_api_call_sample
 {
     class Program
     {
-        private const string TokenUrlBase = "https://api.zhuangxiang.com/";
-        private const string OpenApiUrlBase = "https://openapi.zhuangxiang.com/";
+        private const string TokenUrlBase = "https://api.zhuangxiang.com/"; //发放token的服务基址
+        private const string OpenApiUrlBase = "https://openapi.zhuangxiang.com/"; //装箱大师api服务网址
 
         static void Main(string[] args)
         {
@@ -25,6 +25,13 @@ namespace LoadMaster_api_call_sample
 
             await GetLoadingTaskDataByName(accessToken,"{ your_loadingTask_name}");
         }
+
+        /// <summary>
+        /// 调用api，通过任务名称来获取装载任务数据
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <param name="taskName"></param>
+        /// <returns></returns>
 
         private static async Task<LoadingTaskDto> GetLoadingTaskDataByName(string accessToken, string taskName)
         {
@@ -42,7 +49,7 @@ namespace LoadMaster_api_call_sample
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
-                var ajaxResponse  = JsonConvert.DeserializeObject<AjaxResponse<LoadingTaskDto>>(content);
+                var ajaxResponse  = JsonConvert.DeserializeObject<AjaxResponse<LoadingTaskDto>>(content); //为了方便ajax调用，api返回的数据做了统一的包装。
 
                 var taskData = ajaxResponse.Result;
 
