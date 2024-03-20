@@ -12,7 +12,7 @@ namespace LoadMaster_api_call_sample
     class Program
     {
         private const string TokenUrlBase = "https://api.zhuangxiang.com/"; //发放token的服务基址
-        private const string OpenApiUrlBase = "https://openapi.zhuangxiang.com/"; //装箱大师api服务网址
+        private const string OpenApiUrlBase = "https://openapiv2.zhuangxiang.com/"; //装箱大师api服务网址
 
         static void Main(string[] args)
         {
@@ -21,6 +21,7 @@ namespace LoadMaster_api_call_sample
 
         public static async Task RunDemoAsync()
         {
+            //token的有效期默认为3600秒，具体应用中，可以写一个定时服务，来定期更新token。
             var accessToken = await GetAccessTokenViaOwnerPasswordAsync();
 
             await GetLoadingTaskDataByName(accessToken,"{ your_loadingTask_name}");
