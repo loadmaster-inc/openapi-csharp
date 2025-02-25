@@ -53,7 +53,7 @@
           "dependencies": {
             "Abp.Web.Common": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[9.3.0, )"
             },
             "IdentityModel": {
               "target": "Package",
@@ -61,7 +61,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

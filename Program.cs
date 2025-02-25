@@ -11,8 +11,8 @@ namespace LoadMaster_api_call_sample
 {
     class Program
     {
-        private const string TokenUrlBase = "https://api.zhuangxiang.com/"; //发放token的服务基址
-        private const string OpenApiUrlBase = "https://openapiv2.zhuangxiang.com/"; //装箱大师api服务网址
+        private const string TokenUrlBase = "https://api3.zhuangxiang.com/"; //发放token的服务基址
+        private const string OpenApiUrlBase = "https://openapiv3.zhuangxiang.com/"; //装箱大师api服务网址
 
         static void Main(string[] args)
         {
