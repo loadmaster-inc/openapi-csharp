@@ -20,6 +20,8 @@ TestResults
 *.user
 *.sln.docstates
 
+/bin/*.*
+/obj/*.*
 # Build results
 [Dd]ebug/
 [Rr]elease/
